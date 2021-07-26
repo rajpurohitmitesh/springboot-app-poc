@@ -1,13 +1,12 @@
-<html>
 
-<head> </head>
-
-<body bgcolor="grey">
-
-<center>
-
-<h2> Show Data.......</h2>
-
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User List</title>
+</head>
+<body>
+  
+          <c:out value="${emp}"/>
+         
 </body>
 </html>

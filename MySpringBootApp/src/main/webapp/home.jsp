@@ -9,7 +9,9 @@
 
 <a href="/addEmployee.jsp" target="mainframe"> ADD Employee 	</a> &nbsp &nbsp
 
-<a href="/showData.jsp" target="mainframe"> GET Employee 	</a> &nbsp &nbsp
+<a href="/searchData.jsp" target="mainframe"> SEARCH Employee 	</a> &nbsp &nbsp
+
+<a href="/showData.jsp" target="mainframe"> GET All Employee 	</a> &nbsp &nbsp
  
 <a href="/editData.jsp" target="mainframe"> EDIT Employee	</a> &nbsp &nbsp
 
