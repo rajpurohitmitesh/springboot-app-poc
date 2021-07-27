@@ -8,10 +8,10 @@ public class Employee
 {
 
 	@Id
-	private int eid;
-	private String ename;
-	private String erole;
-	private String eadd;
+	public int eid;
+	public String ename;
+	public String erole;
+	public String eadd;
 	
 	
 	public int getEid() {

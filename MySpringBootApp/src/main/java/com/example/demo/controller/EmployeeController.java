@@ -2,7 +2,11 @@ package com.example.demo.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,12 +44,11 @@ public class EmployeeController {
 	}
 	
 	@RequestMapping("/getAllEmployee")
-	public ModelAndView getAllSavedEmployee() {
+	@ResponseBody
+	public ModelAndView getAllSavedEmployee() throws ParseException {
 		ModelAndView mv = new ModelAndView("getAllEmployee.jsp");
-		List li=new ArrayList();
-		li.add(repo.findAll());
-		mv.addObject("test", li);
-		System.out.println("hello"+mv);
+		List<Employee> resbody = repo.findAll();
+		mv.addObject("e1", resbody);
 		return mv;
 	}
 
