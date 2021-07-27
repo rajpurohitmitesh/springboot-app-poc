@@ -4,14 +4,14 @@
 
 <body bgcolor="grey">
 
-<center><h2> Employee Database </h2>
+<center><u><h2> Employee Database </h2></u>
 <br><br>
 
 <a href="/addEmployee.jsp" target="mainframe"> ADD Employee 	</a> &nbsp &nbsp
 
 <a href="/searchData.jsp" target="mainframe"> SEARCH Employee 	</a> &nbsp &nbsp
 
-<a href="/showData.jsp" target="mainframe"> GET All Employee 	</a> &nbsp &nbsp
+<a href="http://localhost:8090/getAllEmployee" target="mainframe"> GET All Employee 	</a> &nbsp &nbsp
  
 <a href="/editData.jsp" target="mainframe"> EDIT Employee	</a> &nbsp &nbsp
 
@@ -21,6 +21,7 @@
 <iframe name="mainframe" src= "/addEmployee.jsp" width="80%" height="80%">
 
 </iframe>
+
 
 </center>
 </body>

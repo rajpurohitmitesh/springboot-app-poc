@@ -5,7 +5,7 @@
 <body bgcolor="grey">
 
 <center>
-
+<h3> Enter Employee Details <h3>
 <form action="addEmployee">
 <table border="1">
 
@@ -22,3 +22,8 @@
 </center>
 </body>
 </html>
+
+
+
+
+

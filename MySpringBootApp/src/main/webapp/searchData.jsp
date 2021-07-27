@@ -6,6 +6,7 @@
 
 <center>
 
+<h3> Enter Employee ID <h3>
 <form action="searchEmployee">
 <table border="1">
 
