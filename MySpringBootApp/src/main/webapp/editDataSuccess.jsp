@@ -4,6 +4,7 @@
 <body>
 
  <center>
+ <h3> Employee data updated.... <h3>
  <table border="1">
 
 
@@ -27,13 +28,16 @@
 <form action="editEmployeeView">   
 <table border="1">
 <input type="hidden" value="<%= request.getParameter("eid") %>" name="eid">
-<tr><td><input type="submit" value="Edit"></td><br>
+<tr><td></td><td><input type="submit" value="Edit"></td>
 </form>
+
 <form action="deleteEmployee">  
 <input type="hidden" value="<%= request.getParameter("eid") %>" name="eid">
 <td><input type="submit" value="Delete"></td></tr>
-</table>
 </form>
+
+</table>
+
 
     </center>
 </body>

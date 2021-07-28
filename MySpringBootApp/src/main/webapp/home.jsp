@@ -13,9 +13,8 @@
 
 <a href="http://localhost:8090/getAllEmployee" target="mainframe"> GET All Employee 	</a> &nbsp &nbsp
  
-<a href="/editData.jsp" target="mainframe"> EDIT Employee	</a> &nbsp &nbsp
+<a href="/searchData.jsp" target="mainframe"> EDIT / DELETE Employee	</a> &nbsp &nbsp
 
-<a href="/deleteData.jsp" target="mainframe"> DELETE Employee	</a> &nbsp &nbsp
 
 <br><br>
 <iframe name="mainframe" src= "/addEmployee.jsp" width="80%" height="80%">

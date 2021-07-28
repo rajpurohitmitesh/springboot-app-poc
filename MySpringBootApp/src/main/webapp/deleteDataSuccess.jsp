@@ -6,7 +6,7 @@
 
 <center>
 
-<h2> Delele Data.......</h2>
+<h2> Employee record deleted.......</h2>
 
 </center>
 </body>
