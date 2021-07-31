@@ -7,13 +7,12 @@
  <h3> Employee data updated.... <h3>
  <table border="1">
 
-
-<tr>
-<td align="center">EID</td>
-<td align="center" >ENAME</td>
-<td align="center">EROLE</td>
-<td align="center">EADD</td>
-</tr>
+ <tr bgcolor="00FF7F">
+          <th align="center"><b>Employee ID</b></th>
+          <th align="center"><b>Employee Name</b></th>
+          <th align="center"><b>Employee Role</b></th>
+          <th align="center"><b>Employee Address</b></th>
+         </tr>
 
 <tr>
 <td align="center">${test.eid}</td>

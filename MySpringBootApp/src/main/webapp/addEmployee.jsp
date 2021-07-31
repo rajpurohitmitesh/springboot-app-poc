@@ -10,11 +10,11 @@
 <table border="1">
 
 
-<tr><td>EID:</td><td> <input type="text" name="eid"></td></tr>
-<tr><td>ENAME:</td><td><input type="text" name="ename"></td></tr>
-<tr><td>EROLE:</td><td><input type="text" name="erole"></td></tr>
-<tr><td>EADD:</td><td><input type="text" name="eadd"></td></tr>
-<tr><td></td><td><input type="reset"><input type="submit"></td></tr></table>
+<tr bgcolor="00FF7F"><td>EID:</td><td> <input type="text" name="eid"></td></tr>
+<tr bgcolor="00FF7F"><td>ENAME:</td><td><input type="text" name="ename"></td></tr>
+<tr bgcolor="00FF7F"><td>EROLE:</td><td><input type="text" name="erole"></td></tr>
+<tr bgcolor="00FF7F"><td>EADD:</td><td><input type="text" name="eadd"></td></tr>
+<tr bgcolor="00FF7F"><td></td><td><input type="reset"><input type="submit"></td></tr></table>
 
 
 </form>

@@ -7,13 +7,13 @@
 <center><u><h2> Employee Database </h2></u>
 <br><br>
 
-<a href="/addEmployee.jsp" target="mainframe"> ADD Employee 	</a> &nbsp &nbsp
+<a href="/addEmployee.jsp" target="mainframe"> <button type="button">ADD Employee</button></a> &nbsp &nbsp
 
-<a href="/searchData.jsp" target="mainframe"> SEARCH Employee 	</a> &nbsp &nbsp
+<a href="/searchData.jsp" target="mainframe"> <button type="button">SEARCH Employee</button></a> &nbsp &nbsp
 
-<a href="http://localhost:8090/getAllEmployee" target="mainframe"> GET All Employee 	</a> &nbsp &nbsp
+<a href="http://localhost:8090/getAllEmployee" target="mainframe"> <button type="button">GET All Employee</button></a> &nbsp &nbsp
  
-<a href="/searchData.jsp" target="mainframe"> EDIT / DELETE Employee	</a> &nbsp &nbsp
+<a href="/searchData.jsp" target="mainframe"> <button type="button">EDIT / DELETE Employee</button></a> &nbsp &nbsp
 
 
 <br><br>
