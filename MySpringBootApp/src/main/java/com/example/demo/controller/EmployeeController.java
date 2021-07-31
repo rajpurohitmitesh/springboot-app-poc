@@ -70,9 +70,9 @@ public class EmployeeController {
 	}
 
 	@RequestMapping("/updateEmployee")
-	public ModelAndView updateEmployee(@RequestParam int eid) {
+	public ModelAndView updateEmployee(@RequestParam int eid, Employee emp) {
 		ModelAndView mv = new ModelAndView("editDataSuccess.jsp");
-		Employee emp = repo.findById(eid).orElse(new Employee());
+		emp.setEid(eid);
 		repo.save(emp);
 		mv.addObject("test", emp);
 		return mv;
