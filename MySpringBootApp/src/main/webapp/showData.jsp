@@ -3,6 +3,23 @@
 <html lang="en">
 <body>
 
+<head>
+<script language="javascript">
+function deleteRecord(id){
+    var doIt=confirm('Do you want to delete the record?');
+  if(doIt){
+   var f=document.form;
+    f.method="post";
+    f.action="deleteEmployee" ;
+    f.submit();
+    }
+  else{
+
+    }
+}
+</script>
+</head>
+
  <center>
  <table border="1">
 
@@ -29,9 +46,9 @@
 <input type="hidden" value="<%= request.getParameter("eid") %>" name="eid">
 <tr><td><input type="submit" value="Edit"></td><br>
 </form>
-<form action="deleteEmployee">  
+<form name="form">  
 <input type="hidden" value="<%= request.getParameter("eid") %>" name="eid">
-<td><input type="submit" value="Delete"></td></tr>
+<td><input type="submit" value="Delete" onclick="deleteRecord(<%= request.getParameter("eid") %>);" ></td></tr>
 </table>
 </form>
 
