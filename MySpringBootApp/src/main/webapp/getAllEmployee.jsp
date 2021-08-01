@@ -8,6 +8,7 @@
 <%@ page isELIgnored="false" %>
 </head>
 
+
 <body bgcolor="grey">
 
 <center>
@@ -33,6 +34,8 @@
                 <td align="center"><%=s.getEname()%></td>
                 <td align="center"><%=s.getErole()%></td>
                 <td align="center"><%=s.getEadd()%></td>
+                <form action="editEmployeeView">   <input type="hidden" value="<%=s.getEid()%>" name="eid"/>  <td><input type="submit" value="Edit"/></td></form>
+			<td><input type="submit" value="Delete"/></td>
             </tr>
             <%}%>
         </table> 
