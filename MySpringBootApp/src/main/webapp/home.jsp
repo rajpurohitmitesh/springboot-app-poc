@@ -15,6 +15,8 @@
  
 <a href="/searchData.jsp" target="mainframe"> <button type="button">EDIT / DELETE Employee</button></a> &nbsp &nbsp
 
+<a href="http://localhost:8090/dataDownloaded.jsp" target="mainframe"> <button type="button">Download Data</button></a> &nbsp &nbsp
+
 
 <br><br>
 <iframe name="mainframe" src= "/addEmployee.jsp" width="80%" height="80%">

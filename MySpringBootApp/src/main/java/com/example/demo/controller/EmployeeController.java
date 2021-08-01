@@ -46,9 +46,15 @@ public class EmployeeController {
 
 	@RequestMapping("/searchEmployee")
 	public ModelAndView getEmployeeByID(@RequestParam int eid) {
-		ModelAndView mv = new ModelAndView("showData.jsp");
+		ModelAndView mv = new ModelAndView("showData.jsp");;
+		boolean b = repo.existsById(eid);
+		if(b) {
 		Employee emp = repo.findById(eid).orElse(new Employee());
 		mv.addObject("test", emp);
+		}
+		else {
+		mv = new ModelAndView("NoRecordFound.jsp");
+		}
 		return mv;
 	}
 

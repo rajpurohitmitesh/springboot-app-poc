@@ -5,6 +5,8 @@
 
 <head>
 <script language="javascript">
+
+
 function deleteRecord(id){
     var doIt=confirm('Do you want to delete the record?');
   if(doIt){
@@ -21,6 +23,10 @@ function deleteRecord(id){
 </head>
 
  <center>
+
+
+            
+            
  <table border="1">
 
 
@@ -51,6 +57,8 @@ function deleteRecord(id){
 <td><input type="submit" value="Delete" onclick="deleteRecord(<%= request.getParameter("eid") %>);" ></td></tr>
 </table>
 </form>
+
+
 
     </center>
 </body>

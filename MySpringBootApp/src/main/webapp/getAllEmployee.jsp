@@ -18,9 +18,8 @@
  <h1>Displaying Employee Data</h1>
  
  
-  <%ArrayList<Employee> std = 
-            (ArrayList<Employee>)request.getAttribute("e1");
-          System.out.println("Hellooooooo"+std.size());
+  <%ArrayList<Employee> std = (ArrayList<Employee>)request.getAttribute("e1");
+    
             if(std.size() == 0) {%>
             
             
