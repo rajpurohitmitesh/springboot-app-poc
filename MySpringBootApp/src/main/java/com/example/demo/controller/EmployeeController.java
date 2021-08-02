@@ -1,9 +1,17 @@
 package com.example.demo.controller;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.poi.util.IOUtils;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -19,6 +27,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.dao.EmployeeRepo;
+import com.example.demo.dao.UserExcelExporter;
+import com.example.demo.dao.UserServices;
 import com.example.demo.model.Employee;
 
 @Controller
@@ -26,6 +36,10 @@ public class EmployeeController {
 
 	@Autowired
 	EmployeeRepo repo;
+	
+	@Autowired
+	UserExcelExporter excelExporter;
+	
 
 	@RequestMapping("/")
 	public String home() {
@@ -85,7 +99,6 @@ public class EmployeeController {
 	}
 	
 	
-
 	@RequestMapping("/deleteEmployee")
 	public ModelAndView deleteEmployee(@RequestParam int eid) {
 		ModelAndView mv = new ModelAndView("deleteDataSuccess.jsp");
@@ -95,4 +108,29 @@ public class EmployeeController {
 		return mv;
 	}
 
-}
+	
+	@RequestMapping("/downloadAllRecords")
+	    public String exportToExcel(HttpServletResponse response) throws IOException {
+			/*
+			 * response.setContentType("application/force-download");
+			 * response.setHeader("Content-Transfer-Encoding", "binary");
+			 * //response.setContentType("application/octet-stream"); DateFormat
+			 * dateFormatter = new SimpleDateFormat("yyyy_MM_dd_HH:mm:ss"); String
+			 * currentDateTime = dateFormatter.format(new Date());
+			 * 
+			 * String headerKey = "Content-Disposition"; String headerValue =
+			 * "attachment; filename=employeesList_" + currentDateTime + ".xlsx";
+			 * response.setHeader(headerKey, headerValue);
+			 * 
+			 * 
+			 * List<Employee> listUsers = services.listAll();
+			 * 
+			 * UserExcelExporter excelExporter = new UserExcelExporter(listUsers);
+			 */
+	         
+	       excelExporter.export(response);
+			return "dataDownloaded.jsp";    
+	    }  
+	 
+	}
+
